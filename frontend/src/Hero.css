@@ -1,0 +1,61 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+    position: relative; /* مهم بزاف باش الـ services-bar توقف عليه */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+    color: #3792d4; /* اللون الأبيض للنص */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    
+}
+
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 4px; /* توسيع الحروف كيعطي رقي */
+    margin-bottom: 10px;
+  
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* ظل أقوى وأعمق */
+}
+
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.services-bar {
+    position: absolute; /* كتلصق الخدمة فالتصويرة */
+    bottom: 0;          /* كتلصق لتحت */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4); /* خلفية كحلة شفافة باش يبان النص أبيض */
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    color: white;
+}
+
+.item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.item span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.item:hover span {
+    transform: translateY(-10px);
+}

@@ -1,0 +1,73 @@
+/* 1. السيكشن الرئيسي (هنا فين حلينا مشكل التغطية ديال الـ Navbar) */
+.locations-section {
+    padding-top: 120px !important; /* هبطنا العنوان باش يبان تحت الـ Navbar */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* 2. تنسيق العنوان "Our Locations" */
+.locations-section h2 {
+    color: #D4AF37; /* اللون الذهبي */
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* 3. الخريطة (Map) */
+#map {
+    height: 450px !important;
+    width: 90% !important;
+    margin: 0 auto 50px auto;
+    border: 5px solid #D4AF37;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 1; /* باش ما يتغطاش */
+}
+
+/* 4. الحاوية ديال الكارتات */
+.locations-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+/* 5. الكارتة الواحدة (Card) */
+.location-card {
+    background: rgba(244, 228, 188, 0.7) !important;
+    border: 2px solid #D4AF37 !important;
+    padding: 25px !important;
+    border-radius: 15px !important;
+    width: 300px !important;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+  
+}
+
+/* 6. الزر (Button) */
+.book-btn {
+    background-color: #D4AF37 !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 30px !important;
+    border-radius: 8px !important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.book-btn:hover {
+    background-color: #b8860b !important;
+    transform: scale(1.05);
+}

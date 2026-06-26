@@ -1,0 +1,5 @@
+.bookings-container { padding: 20px; }
+.search-input { width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ddd; }
+.bookings-table { width: 100%; border-collapse: collapse; }
+.bookings-table th, .bookings-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+.bookings-table th { background-color: #f4f4f4; }

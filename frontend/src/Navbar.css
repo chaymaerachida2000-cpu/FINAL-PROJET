@@ -1,0 +1,105 @@
+/* الحاوية الأساسية */
+* {
+    box-sizing: border-box; /* هادي كتقول للمتصفح: احسب الـ padding داخل الـ width */
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* تأثير زجاجي جميل */
+}
+
+
+  
+.logo img {
+    height: 60px; /* تحكمي في كبر اللوغو من هنا */
+}
+
+/* الروابط: margin-right: auto كتدفع الزر لليمين */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: auto; 
+    margin-left: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+/* الزر: كيجي دابا بوحدو في أقصى اليمين */
+.btn-book {
+    color: white;
+    background: transparent;
+    border: 2px solid #d4af37;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap !important; 
+}
+
+
+.btn-book:hover {
+    background: #d4af37;
+    color: black;
+}
+
+/* التجاوب مع التليفون */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav-links {
+        margin: 15px 0;
+    }
+}
+/* هادشي غيخدم مع الكود اللي عندك دابا */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* كيظهر فالتليفون */
+    }
+
+    .nav-links {
+        display: none; /* كيختفيو الروابط */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex; /* كيظهر ملي نبركو على الهامبرغر */
+    }
+}

@@ -1,0 +1,114 @@
+/* باش تغطي الصفحة كاملة بالصورة */
+.container {
+
+    background-size: cover;          /* باش الصورة تغطي كلشي */
+    background-position: center;     /* باش الصورة تبان مقادة في الوسط */
+    background-repeat: no-repeat;
+    min-height: 100vh;               /* باش الطول يغطي شاشة المتصفح كاملة */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+   
+    padding-top: 80px; /* زيدي هاد السطر باش المحتوى يبدا تحت الـ Navbar بـ 80px */
+    min-height: 100vh;
+  
+    padding-top: 80px; /* العلو ديال الـ Navbar هو اللي كتحطيه هنا باش تهبطي المحتوى */
+    min-height: 100vh;
+    /* باقي الستايل ديال الخلفية هنا */
+
+    /* باقي الستايل ديالك...*/
+
+}
+
+/* باش نرجعو الكتابة بيضاء */
+.container h1 {
+    color: white;                    /* الكتابة بيضاء */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* ظل للكتابة باش تبان مزيان فوق الصورة */
+    font-size: 3rem;
+}
+
+
+.booking-page {
+  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+   
+   
+    justify-content: center;
+    
+   
+    padding-top: 150px; /* زيدي هاد الرقم باش تهبطي الـ box وكلشي لي معاه */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.booking-page h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.booking-form {
+    /* تأثير الزجاج الفخم */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* باش يخدم في كل المتصفحات */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* الشكل والأبعاد */
+    padding: 40px;
+    border-radius: 30px; /* زوايا دائرية بزاف كتعطي لوك عصري */
+    width: 90%;
+    max-width: 450px;
+    
+    /* الظل اللي كيعطي العمق */
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+    
+    /* ترتيب العناصر لداخل */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* المسافة بين الخانات */
+}
+
+/* تنسيق الخانات (Inputs) */
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* تاثير ملي نحطو الكرسور (Hover) */
+.booking-form input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-color: #d4af37; /* لون ذهبي ملي تكليكي */
+}
+
+/* الزر ديال Submit */
+.booking-form button {
+    margin-top: 10px;
+    background: transparent;
+    color: #ebe3e3;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+     border: 2px solid #d4af37;
+}
+
+.booking-form button:hover {
+    background: #d4af37;
+    transform: scale(1.02); /* الزر كيكبر شوية ملي تقرب الماوس */
+}

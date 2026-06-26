@@ -1,0 +1,44 @@
+.contact-container {
+    padding: 120px 20px; /* لضمان عدم التداخل مع الـ Navbar */
+    background-color: var(--sand);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1268b3;
+}
+
+
+.contact-wrapper {
+    display: flex;
+    gap: 50px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #D4AF37;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #D4AF37;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
